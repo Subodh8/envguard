@@ -56,7 +56,7 @@ line-length = 88
 target-version = "py39"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP", "B", "SIM"]
+select = ["E", "F", "UP", "B", "SIM"]
 ignore = ["E501"]
 
 # --- Pytest ---
