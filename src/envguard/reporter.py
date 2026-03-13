@@ -8,8 +8,8 @@ from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 
-from envguard.checker import CheckResult, parse_env_file
 from envguard.auditor import AuditFinding
+from envguard.checker import CheckResult, parse_env_file
 
 SEVERITY_COLOUR = {"high": "red", "medium": "yellow", "low": "blue"}
 SEVERITY_ICON = {"high": "✗", "medium": "⚠", "low": "ℹ"}

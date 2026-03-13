@@ -2,9 +2,7 @@
 
 from pathlib import Path
 
-import pytest
-
-from envguard.checker import check_env, parse_env_file, CheckResult
+from envguard.checker import check_env, parse_env_file
 
 
 # ---------------------------------------------------------------------------

@@ -2,9 +2,7 @@
 
 from pathlib import Path
 
-import pytest
-
-from envguard.auditor import audit_env, AuditFinding
+from envguard.auditor import audit_env
 
 
 class TestAuditEnv:

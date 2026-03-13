@@ -9,10 +9,10 @@ import click
 from rich.console import Console
 
 from envguard import __version__
-from envguard.checker import check_env, CheckResult
 from envguard.auditor import audit_env
+from envguard.checker import check_env
 from envguard.generator import generate_example
-from envguard.reporter import print_check_report, print_audit_report, print_diff_report
+from envguard.reporter import print_audit_report, print_check_report, print_diff_report
 
 console = Console()
 
