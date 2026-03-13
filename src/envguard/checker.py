@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Optional
 
 
 @dataclass
@@ -100,11 +99,11 @@ def parse_env_file(path: Path) -> tuple[dict[str, str], list[str]]:
 
 def _unquote(value: str) -> str:
     """Remove surrounding quotes from a value."""
-    if len(value) >= 2:
-        if (value.startswith('"') and value.endswith('"')) or (
-            value.startswith("'") and value.endswith("'")
-        ):
-            return value[1:-1]
+    if len(value) >= 2 and (
+        (value.startswith('"') and value.endswith('"'))
+        or (value.startswith("'") and value.endswith("'"))
+    ):
+        return value[1:-1]
     return value
 
 
@@ -119,7 +118,7 @@ def _strip_inline_comment(value: str) -> str:
 def check_env(
     env_path: Path = Path(".env"),
     example_path: Path = Path(".env.example"),
-    ignore_keys: Optional[list[str]] = None,
+    ignore_keys: list[str] | None = None,
 ) -> CheckResult:
     """Validate env_path against example_path.
 
