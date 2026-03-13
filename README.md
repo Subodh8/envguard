@@ -5,7 +5,7 @@
 EnvGuard is a developer CLI tool that validates, audits, and generates `.env` files — catching
 missing keys, leaked secrets, and configuration drift before they reach production.
 
-[![CI](https://github.com/your-username/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/envguard/actions)
+[![CI](https://github.com/Subodh8/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/Subodh8/envguard/actions)
 [![PyPI version](https://badge.fury.io/py/envguard.svg)](https://badge.fury.io/py/envguard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -51,7 +51,7 @@ Summary: 2 errors, 1 warning  ← fix these before deploying
 pip install envguard
 
 # From source (for development)
-git clone https://github.com/your-username/envguard.git
+git clone https://github.com/Subodh8/envguard.git
 cd envguard
 pip install -e ".[dev]"
 ```
@@ -83,7 +83,7 @@ Add EnvGuard to your pre-commit pipeline so it runs automatically on every commi
 ```yaml
 # .pre-commit-config.yaml
 repos:
-  - repo: https://github.com/your-username/envguard
+  - repo: https://github.com/Subodh8/envguard
     rev: v0.1.0
     hooks:
       - id: envguard-check
@@ -110,7 +110,7 @@ fail_on_warning = false
 ## Contributing
 
 We love contributions! EnvGuard is beginner-friendly by design — see [CONTRIBUTING.md](CONTRIBUTING.md)
-for a guided walkthrough. Check the [good first issues](https://github.com/your-username/envguard/labels/good%20first%20issue)
+for a guided walkthrough. Check the [good first issues](https://github.com/Subodh8/envguard/labels/good%20first%20issue)
 label to get started.
 
 ## License
