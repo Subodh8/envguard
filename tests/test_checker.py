@@ -1,7 +1,6 @@
 """Tests for the envguard checker module."""
 
 from pathlib import Path
-
 from envguard.checker import check_env, parse_env_file
 
 
